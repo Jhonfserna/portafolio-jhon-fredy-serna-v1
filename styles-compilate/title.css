@@ -1,0 +1,149 @@
+section.title{
+    display: flex;
+    margin-top: 2rem;
+    width: 90vw;
+    height: 80vh;
+    margin: 10px 30px 10px 50px;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+
+}
+
+.title__profile{
+    width: 350px; 
+    height: 350px;
+    border-radius: 80%;
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgb(77, 8, 167);
+    margin-right: 100px;
+    margin-top: 50px;
+    justify-content:center;
+    
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.title__bio {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: rgb(77, 8, 167);
+    transition: font-size 1s ease;
+}
+
+.title__bio:hover{
+    transform: scale(1.07);   
+}
+  
+.title__subsection {
+    font-size: 1.5rem;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0 30px 33px 0px;
+    transition: font-size 1s ease;
+}
+  
+.title__subsection:hover{
+    transform: scale(1.07);   
+}
+
+.title__network {
+    display: flex;
+    padding-inline-start: 0px;
+    align-items: center;
+}
+
+.title__network__item {
+    font-size: 22px;
+    margin-right: 3rem;
+}
+
+.title__network__item a {
+    text-decoration: none;
+    transition: font-size 0.5s ease;
+}
+
+.title__network__item a:hover {
+    color: rgb(77, 8, 167);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 676px) {
+
+    .section_tittle {
+        display:flex;
+        flex-direction: column;
+        margin: 0px 2px 30px 2px;
+        padding: 0px 0px 0px 0px;
+        
+    }
+
+    .title__profile{
+        width: 1rem; 
+        height: 2rem;
+        align-items: center;
+
+  }
+  
+    .title__div {   
+         
+        justify-content:space-around;
+        flex-wrap: wrap;
+        /* padding-bottom: 200px; */  
+    }
+
+    .title__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .section_tittle {
+        display:flex;
+        flex-direction: column;
+        padding: 0px px px px;
+        gap: 10px 5px 
+    }
+  
+    .title__div {   
+        justify-content:space-around;
+        flex-wrap: wrap;
+        /* padding-bottom: 200px; */ 
+        gap: 1rem 
+    }
+
+    .title__profile{
+        width: 1rem; 
+        height: 7rem;
+        align-items: center;
+
+  }
+
+    .title__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+}    
+
