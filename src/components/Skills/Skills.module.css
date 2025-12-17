@@ -1,0 +1,95 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.skills__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills__title:hover {
+    transform: scale(1.5);
+    text-shadow: 0 0 10px rgb(77, 8, 167);
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 50px;
+    /* added some padding container */
+    box-sizing: border-box;
+}
+
+.skills__box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 12vw;
+    height: 13vh;
+    background-color: white;
+    align-items: center;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    list-style: none;
+    /* Ensure no list styling on the box itself if it was div */
+}
+
+.skills__box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+}
+
+.skills__box ul {
+    padding-inline-start: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .skills__line {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px 10px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .skills__box {
+        width: 6rem;
+        height: auto;
+        flex-grow: calc(1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .skills__line {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px 10px;
+        align-items: center;
+    }
+
+    .skills__box {
+        width: 9rem;
+        height: auto;
+        flex-grow: calc(1);
+    }
+}
