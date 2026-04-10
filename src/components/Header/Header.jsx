@@ -16,7 +16,7 @@ const Header = () => {
                 <li className={styles.menu__list__item}><a href="#hobbies">Hobbies</a></li>
                 <li className={styles.menu__list__item}><a href="#formacion">Formación</a></li>
                 <li className={styles.menu__list__item}><a href="#xp">Proyectos</a></li>
-                <li className={`${styles.menu__list__item} ${styles.destacado}`}><a href="#contacto">jhonfserna@yahoo.com</a></li>
+                <li className={`${styles.menu__list__item} ${styles.destacado}`}><a href="mailto:jhonfserna@yahoo.com">jhonfserna@yahoo.com</a></li>
             </ul>
         </nav>
     </section>
