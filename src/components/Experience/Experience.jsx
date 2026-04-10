@@ -5,8 +5,26 @@ import aluraFlixImg from '../../assets/alura-flix-videoteca.PNG';
 import aluraGeekImg from '../../assets/alura-geek.PNG';
 import encriptadorImg from '../../assets/encriptador-texto.PNG';
 import adivinaImg from '../../assets/adivina-el-numero.PNG';
+import adoptmeImg from '../../assets/adopetme_landingpage.jpg';
+import fintechPymeImg from '../../assets/fintech-pyme.jpg';
 
 const projects = [
+    {
+        title: 'Fintech Pyme: Web de Onboarding de Créditos para PYMES',
+        subtitle: 'Desarrollo frontend de la página web para la solicitud de créditos PYME',
+        img: fintechPymeImg,
+        repo: 'https://github.com/TomasLaus/onboarding-creditos-pymes.git',
+        demo: 'https://onboarding-creditos-pymes.vercel.app/',
+        type: 'image'
+    },
+    {
+        title: 'ADOPETME:Página web para adopción de mascotas',
+        subtitle: 'Diseño y desarrollo de página web para adopción de mascotas',
+        img: adoptmeImg,
+        repo: 'https://github.com/No-Country-simulation/c19-20-m-java-react/tree/frontend',
+        demo: 'https://c19-20-m-java-react-git-frontend-jhonfsernas-projects.vercel.app/',
+        type: 'image'
+    },
     {
         title: 'Biblioteca audiovisual personal',
         subtitle: 'Challenge Alura Flix',
